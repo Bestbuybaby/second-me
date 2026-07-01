@@ -1,0 +1,6 @@
+interface:
+  display_name: "Second Me"
+  short_description: "Repo-specific patterns and workflows for second-me"
+  default_prompt: "Use the second-me repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
