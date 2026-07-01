@@ -1,0 +1,317 @@
+# Instincts generated from https://github.com/Bestbuybaby/second-me
+# Generated: 2026-07-01T18:49:45.937Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: second-me-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/second-me
+---
+
+# Second Me Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: build
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: build(deps): bump the npm_and_yarn group across 1 directory with 9 updates
+
+---
+id: second-me-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/second-me
+---
+
+# Second Me Commit Length
+
+## Action
+
+Write moderate-length commit messages (~74 characters)
+
+## Evidence
+
+- Average commit message length: 74 chars
+- Based on 1 commits
+
+---
+id: second-me-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/second-me
+---
+
+# Second Me Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: second-me-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/second-me
+---
+
+# Second Me Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: second-me-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/second-me
+---
+
+# Second Me Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: second-me-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/second-me
+---
+
+# Second Me Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: second-me-instinct-file-naming-camelcase
+trigger: "When creating a new file in the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct File Naming Camelcase
+
+## Action
+
+Name the file using camelCase format
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: second-me-instinct-function-naming-camelcase
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Function Naming Camelcase
+
+## Action
+
+Name the function using camelCase format
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: second-me-instinct-class-naming-pascalcase
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Class Naming Pascalcase
+
+## Action
+
+Name the class using PascalCase format
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: second-me-instinct-constant-naming-screaming-snake-case
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Constant Naming Screaming Snake Case
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE format
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: second-me-instinct-import-style-relative
+trigger: "When importing modules in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Import Style Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: second-me-instinct-export-style-named
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Export Style Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: second-me-instinct-commit-format-conventional-build
+trigger: "When making a commit related to dependencies or build system"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Commit Format Conventional Build
+
+## Action
+
+Use the 'build' prefix following conventional commit format (e.g., build(deps): ...)
+
+## Evidence
+
+- Seen in commit: build(deps): bump the npm_and_yarn group across 1 directory with 9 updates
+
+---
+id: second-me-instinct-commit-length-medium
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Commit Length Medium
+
+## Action
+
+Write a commit message with an average length around 74 characters
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: second-me-instinct-test-location-separate
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate folder from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: second-me-instinct-typescript-language
+trigger: "When writing new code"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/second-me
+---
+
+# Second Me Instinct Typescript Language
+
+## Action
+
+Use TypeScript as the programming language
+
+## Evidence
+
+- Pattern in codeStyle.language
+
